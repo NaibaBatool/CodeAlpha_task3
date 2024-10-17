@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f4ed6ec543.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <i class="fa-solid fa-angle-down"></i>
+        <h3>Now Playing</h3>
+        <p>...</p>
+      </div>
+      <div class="center-img">
+        <img src="" alt="" />
+        <div class="artist">
+          <h3></h3>
+          <p></p>
+        </div>
+        <div class="progress-bar">
+          <div class="area">
+            <span></span>
+          </div>
+          <audio id="main-audio" src=""></audio>
+          <div class="timer">
+            <p class="start">0:00</p>
+            <p class="end"></p>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <i class="fa-solid fa-repeat" id="repeat"></i>
+        <i class="fa-solid fa-backward backward" id="backward"></i>
+        <div class="play-pause">
+          <i class="fa-solid fa-play play"></i>
+        </div>
+        <i class="fa-solid fa-forward" id="forward"></i>
+        <i class="fa-solid fa-music" id="more-music"></i>
+      </div>
+      <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <i class="fa-solid fa-music"></i>
+            <span>Music List</span>
+          </div>
+          <i class="fa-solid fa-xmark" id="close"></i>
+        </div>
+        <ul>
+          <li li-index="2">
+            <div class="row">
+              <span>Hardwind- Want me</span>
+              <p>Mike Archangelo</p>
+            </div>
+          </li>
+          <li li-index="3">
+            <div class="row">
+              <span>Beauz & Jvna - Night</span>
+              <p>Beauz & Jvna</p>
+            </div>
+          </li>
+          <li li-index="4">
+            <div class="row">
+              <span>Lost Sky - Vision NCS</span>
+              <p>NCS Release</p>
+            </div>
+          </li>
+          <li li-index="5">
+            <div class="row">
+              <span>Harley Bird - Home</span>
+              <p>Jordan Schor</p>
+            </div>
+          </li>
+          <li li-index="6">
+            <div class="row">
+              <span>Ikson Anywhere - Ikson</span>
+              <p>Audio & Library</p>
+            </div>
+          </li>
+          <li li-index="7">
+            <div class="row">
+              <span>Taylor Swift - Crazy</span>
+              <p>Taylor Swift</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <script src="music.js"></script>
+</html>
